@@ -1,11 +1,9 @@
 package com.algaworks.cobranca.model;
 
-import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
 
 import javax.persistence.*;
-import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -50,9 +48,11 @@ public class Titulo {
         this.dataVencimento = dataVencimento;
     }
 
-    public void setValor(BigDecimal valor) { this.valor = valor; }
-
     public BigDecimal getValor() { return valor; }
+
+    public void setValor(BigDecimal valor) {
+        this.valor = valor;
+    }
 
     public StatusTitulo getStatus() {
         return status;
@@ -60,6 +60,10 @@ public class Titulo {
 
     public void setStatus(StatusTitulo status) {
         this.status = status;
+    }
+
+    public boolean isPendente() {
+        return StatusTitulo.PENDENTE.equals(this.status);
     }
 
     @Override

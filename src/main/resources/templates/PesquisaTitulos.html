@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://wwww.thymeleaf.org"
+<html xmlns:th="http://wwww.thymeleaf.org"
       xmlns:layout="http://ultraq.net.nz./thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/xhtml"
       layout:decorator="LayoutPadrao">
 
 <head>
@@ -29,8 +29,19 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <tr th:each="titulo : ${titulos}">
+                        <td class="text-center" th:text="${titulo.codigo}"/>
+                        <td th:text="${titulo.descricao}"/>
+                        <td class="text-center" th:text="${{titulo.dataVencimento}}"/>
+                        <td class="text-right" th:text="|R$ ${{titulo.valor}}|"/>
+                        <td class="text-center">
+                                <span class="label" th:text="${titulo.status.descricao}"
+                                      th:classappend="${titulo.pendente ? 'label-danger' : 'label-success'}"/>
+                        </td>
+                        <td class="text-center"/>
+                    </tr>
                         <tr>
-                            <td colspan="6">Nenhum título foi encontrado.</td>
+                            <td colspan="6" th:if="${#lists.isEmpty(titulos)}">Nenhum título foi encontrado.</td>
                         </tr>
                     </tbody>
                 </table>
