@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
 <html xmlns:th="http://wwww.thymeleaf.org"
       xmlns:layout="http://ultraq.net.nz./thymeleaf/layout"
       xmlns="http://www.w3.org/1999/xhtml"
@@ -35,8 +36,8 @@
                         <td class="text-center" th:text="${{titulo.dataVencimento}}"/>
                         <td class="text-right" th:text="|R$ ${{titulo.valor}}|"/>
                         <td class="text-center">
-                                <span class="label" th:text="${titulo.status.descricao}"
-                                      th:classappend="${titulo.pendente ? 'label-danger' : 'label-success'}"/>
+                            <span class="label" th:text="${titulo.status.descricao}"
+                                  th:classappend="${titulo.pendente ? 'label-danger' : 'label-success'}"/>
                         </td>
                         <td class="text-center"/>
                     </tr>

@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://wwww.thymeleaf.org"
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns:th="http://wwww.thymeleaf.org"
       xmlns:layout="http://ultraq.net.nz./thymeleaf/layout"
+      xmlns="http://www.w3.org/1999/xhtml"
       layout:decorator="LayoutPadrao">
 <head>
     <title>Cadastro de Titulos</title>
 </head>
 
     <section layout:fragment="conteudo">
-        <form class="form-horizontal" method="POST" action="/titulos">
+        <form class="form-horizontal" method="POST" action="/titulos" th:object="${titulo}">
             <div class="alert alert-success" th:if="${!#strings.isEmpty(mensagem)}">
                 <span th:text="${mensagem}"/>
+            </div>
+            <div class="alert alert-danger" th:if="${#fields.hasAnyErros()}">
+                <div th:each="detailedError : ${#fields.detailedErrors()}">
+                    <span th:text="${detailedError.message}"/>
+                </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Novo Título</div>
