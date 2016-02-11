@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aa789fb-82b5-4c0b-9595-f3c7a85b3a6e" name="Default" comment="Aula 2.10 - Listando titulos, alterando thymeleaf para exibir dados customizados.">
+    <list default="true" id="0aa789fb-82b5-4c0b-9595-f3c7a85b3a6e" name="Default" comment="Aula 2.13">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cobranca.iws" />
@@ -829,7 +829,7 @@
       <workItem from="1454949694638" duration="321000" />
       <workItem from="1454950017534" duration="65000" />
       <workItem from="1455032491884" duration="4704000" />
-      <workItem from="1455205471249" duration="4471000" />
+      <workItem from="1455205471249" duration="4540000" />
     </task>
     <task id="LOCAL-00001" summary="Corrigida configuração do MySQL no arquivo pom.xml.">
       <created>1454946578494</created>
@@ -849,11 +849,17 @@
       <option name="project" value="LOCAL" />
       <updated>1455209202911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Aula 2.13">
+      <created>1455210470605</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1455210470605</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38319000" />
+    <option name="totallyTimeSpent" value="38388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -903,7 +909,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Corrigida configuração do MySQL no arquivo pom.xml." />
     <MESSAGE value="Aula 2.10 - Listando titulos, alterando thymeleaf para exibir dados customizados." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 2.10 - Listando titulos, alterando thymeleaf para exibir dados customizados." />
+    <MESSAGE value="Aula 2.13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 2.13" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
