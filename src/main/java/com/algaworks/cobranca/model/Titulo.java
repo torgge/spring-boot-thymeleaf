@@ -10,39 +10,32 @@ import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
-import java.time.Instant;
 import java.util.Date;
 
 @Entity
 public class Titulo {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
-    @NotEmpty(message = "Descrição é obrigatória.")
-    @Size(max = 60, message = "A descrição não pode conter mais que 60 caracteres")
+
+    @NotEmpty(message = "Descrição é obrigatória")
+    @Size(max = 60, message = "A descrição não pode conter mais de 60 caracteres")
     private String descricao;
 
-    @NotNull(message = "Data é obrigatória.")
+    @NotNull(message = "Date de vencimento é obrigatória")
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     @Temporal(TemporalType.DATE)
     private Date dataVencimento;
 
-    @NotNull(message = "Valor é obrigatório.")
-    @DecimalMin(value = "0.01", message = "Valor não pode ser menor que 0.01.")
+    @NotNull(message = "Valor é obrigatório")
+    @DecimalMin(value = "0.01", message = "Valor não pode ser menor que 0,01")
     @DecimalMax(value = "9999999.99", message = "Valor não pode ser maior que 9.999.999,99")
     @NumberFormat(pattern = "#,##0.00")
     private BigDecimal valor;
 
     @Enumerated(EnumType.STRING)
     private StatusTitulo status;
-
-    public Titulo() {
-        this.codigo = Long.valueOf(0);
-        this.descricao = "";
-        this.dataVencimento = Date.from(Instant.EPOCH);
-        this.valor = BigDecimal.valueOf(0);
-        this.status = StatusTitulo.PENDENTE;
-    }
 
     public Long getCodigo() {
         return codigo;
@@ -68,7 +61,9 @@ public class Titulo {
         this.dataVencimento = dataVencimento;
     }
 
-    public BigDecimal getValor() { return valor; }
+    public BigDecimal getValor() {
+        return valor;
+    }
 
     public void setValor(BigDecimal valor) {
         this.valor = valor;
@@ -87,18 +82,28 @@ public class Titulo {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Titulo titulo = (Titulo) o;
-
-        return codigo.equals(titulo.codigo);
-
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
+        return result;
     }
 
     @Override
-    public int hashCode() {
-        return codigo.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Titulo other = (Titulo) obj;
+        if (codigo == null) {
+            if (other.codigo != null)
+                return false;
+        } else if (!codigo.equals(other.codigo))
+            return false;
+        return true;
     }
+
 }
