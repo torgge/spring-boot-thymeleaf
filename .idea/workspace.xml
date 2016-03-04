@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aa789fb-82b5-4c0b-9595-f3c7a85b3a6e" name="Default" comment="3.3 - Adicionando máscara ao campo numérico.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/algaworks/cobranca/service/CadastroTituloService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/algaworks/cobranca/controller/TituloController.class" afterPath="$PROJECT_DIR$/target/classes/com/algaworks/cobranca/controller/TituloController.class" />
+    <list default="true" id="0aa789fb-82b5-4c0b-9595-f3c7a85b3a6e" name="Default" comment="3.4 - Adicionando a camada service.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.maskMoney.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/algaworks/cobranca/controller/TituloController.java" afterPath="$PROJECT_DIR$/src/main/java/com/algaworks/cobranca/controller/TituloController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/PesquisaTitulos.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/PesquisaTitulos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/PesquisaTitulos.html" afterPath="$PROJECT_DIR$/target/classes/templates/PesquisaTitulos.html" />
     </list>
     <ignored path="cobranca.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1057,7 +1053,7 @@
       <workItem from="1456451488143" duration="1116000" />
       <workItem from="1456658501592" duration="4983000" />
       <workItem from="1457021622578" duration="1931000" />
-      <workItem from="1457078380027" duration="3699000" />
+      <workItem from="1457078380027" duration="4380000" />
     </task>
     <task id="LOCAL-00001" summary="Corrigida configuração do MySQL no arquivo pom.xml.">
       <created>1454946578494</created>
@@ -1119,11 +1115,17 @@
       <option name="project" value="LOCAL" />
       <updated>1457080033979</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="3.4 - Adicionando a camada service.">
+      <created>1457082117978</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1457082117978</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71538000" />
+    <option name="totallyTimeSpent" value="72219000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1147,7 +1149,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984064" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40903056" sideWeight="0.49550128" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30146083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30146083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1219,7 +1221,8 @@
     <MESSAGE value="Aula 2.16 - Retirando action estática do DialogoConfirmacaoExclusao" />
     <MESSAGE value="3.2 - Adicionando componente de calendário." />
     <MESSAGE value="3.3 - Adicionando máscara ao campo numérico." />
-    <option name="LAST_COMMIT_MESSAGE" value="3.3 - Adicionando máscara ao campo numérico." />
+    <MESSAGE value="3.4 - Adicionando a camada service." />
+    <option name="LAST_COMMIT_MESSAGE" value="3.4 - Adicionando a camada service." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1607,7 +1610,7 @@
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
             <element signature="e#757#758#0" expanded="true" />
           </folding>
         </state>
